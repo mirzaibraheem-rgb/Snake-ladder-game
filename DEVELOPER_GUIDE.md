@@ -23,6 +23,7 @@ npm run test:ui      # Playwright UI tests at phone, tablet and desktop sizes (s
 | `npm run build:ios` | Updates the Xcode project in `ios/`; then archive in Xcode | macOS + Xcode |
 | `npm run icons` | Regenerates every icon and splash from `assets/icon-*.svg` | Node only |
 | `npm run docs:pdf` | `docs/*.pdf` rules from the Markdown files | Node + Playwright Chromium |
+| `node scripts/store-screenshots.mjs` | `store/screenshots/` at every Play and App Store size, plus the feature graphic | Web build served with `npm run preview` |
 | `npm run handover` | `SOFT_Snakes_and_Ladders_Handover/` folder and `.zip` | Run the builds first |
 
 **No Windows or Mac?** Push to GitHub. `.github/workflows/build.yml` builds Web, Windows (on a real Windows runner, including a check that the .exe reads an edited `content` folder), Android (.aab and .apk) and an iOS compile check. Download results from the run's **Artifacts**.
