@@ -133,7 +133,9 @@ input { font: inherit; user-select: text; -webkit-user-select: text; }
 .char-btn .char-name { font-size: 14px; font-weight: 700; color: var(--purple-deep); }
 .char-btn .char-name .secondary { font-size: 12px; line-height: 1.7; }
 .char-btn.on { border-color: var(--accent); background: #fff; transform: scale(1.05); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); }
-.char-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.char-btn { position: relative; }
+.char-btn.taken { opacity: 0.55; }
+.taken-badge { position: absolute; top: 4px; right: 4px; width: 24px; height: 24px; border-radius: 50%; background: var(--orange); color: #fff; font-weight: 800; font-size: 14px; display: grid; place-items: center; }
 .setup-foot { display: flex; justify-content: center; padding: 8px 0 4px; position: sticky; bottom: 0; z-index: 5; }
 
 /* ---------- game ---------- */
@@ -357,4 +359,26 @@ input { font: inherit; user-select: text; -webkit-user-select: text; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
   .modal-panel, .toast { transition: opacity 0.15s !important; transform: none !important; }
+}
+
+/* Characters whose arms are drawn in front (hijab): cheer outward so hands never cover the face. */
+.st-celebrate .arms-front .arm-l { animation-name: cheerL2; }
+.st-celebrate .arms-front .arm-r { animation-name: cheerR2; }
+.st-climb .arms-front .arm-l { animation-name: climbL2; }
+.st-climb .arms-front .arm-r { animation-name: climbR2; }
+@keyframes cheerL2 { from { transform: rotate(110deg); } to { transform: rotate(128deg); } }
+@keyframes cheerR2 { from { transform: rotate(-110deg); } to { transform: rotate(-128deg); } }
+@keyframes climbL2 { from { transform: rotate(118deg); } to { transform: rotate(20deg); } }
+@keyframes climbR2 { from { transform: rotate(-20deg); } to { transform: rotate(-118deg); } }
+
+/* Win screen on narrow or short screens: character beside the title, buttons stay in view. */
+@media (max-width: 560px), (max-height: 700px) {
+  .win-hero { flex-wrap: nowrap; gap: 6px; }
+  .win-char { width: clamp(70px, 24vw, 120px); flex: none; }
+  .trophy { width: 44px; height: 44px; }
+  .win h2 { font-size: clamp(22px, 6.4vw, 32px); }
+  .win-name { font-size: 19px; }
+  .lessons { max-height: 30vh; }
+  .lesson { flex-direction: column; gap: 2px; }
+  .lesson-kind { min-width: 0; }
 }

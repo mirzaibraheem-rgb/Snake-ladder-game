@@ -130,8 +130,7 @@ function legs(c: CharacterDef): string {
 function arm(c: CharacterDef, side: 'l' | 'r'): string {
   const x = side === 'l' ? 36 : 76;
   const handX = side === 'l' ? 39 : 81;
-  const sleeve = c.topStyle === 'shirt' ? c.top : c.top;
-  return `<g class="arm arm-${side}"><rect x="${x}" y="82" width="9" height="28" rx="4.5" fill="${sleeve}"/><circle cx="${handX + (side === 'l' ? 1.5 : -1.5)}" cy="112" r="5" fill="${c.skin}"/></g>`;
+  return `<g class="arm arm-${side}"><rect x="${x}" y="82" width="9" height="28" rx="4.5" fill="${c.top}"/><circle cx="${handX + (side === 'l' ? 1.5 : -1.5)}" cy="112" r="5" fill="${c.skin}"/></g>`;
 }
 
 /**
@@ -142,11 +141,14 @@ export function characterSVG(c: CharacterDef, opts: { avatar?: boolean; title?: 
   const viewBox = opts.avatar ? '22 8 76 76' : '0 0 120 150';
   const acc = accessories(c);
   const skinShade = darken(c.skin, 0.12);
-  return `<svg class="char-svg" viewBox="${viewBox}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${opts.title ?? c.name}">
+  // A hijab drapes over the shoulders, so those characters draw their arms on top of it.
+  const arms = arm(c, 'l') + arm(c, 'r');
+  const armsFirst = c.hair !== 'hijab';
+  return `<svg class="char-svg${armsFirst ? "" : " arms-front"}" viewBox="${viewBox}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${opts.title ?? c.name}">
   ${opts.avatar ? '' : '<ellipse class="shadow" cx="60" cy="143" rx="27" ry="5" fill="rgba(30,0,60,.28)"/>'}
   <g class="body-g">
     ${legs(c)}
-    ${arm(c, 'l')}${arm(c, 'r')}
+    ${armsFirst ? arms : ''}
     ${torso(c)}
     ${acc.body}
     <g class="head-g">
@@ -164,6 +166,7 @@ export function characterSVG(c: CharacterDef, opts: { avatar?: boolean; title?: 
       <path class="tear" d="M45 58 q-3 6 0 8 q3 -2 0 -8Z" fill="#60A5FA"/>
       ${acc.front}
     </g>
+    ${armsFirst ? '' : arms}
   </g>
 </svg>`;
 }

@@ -73,17 +73,21 @@ export function setupScene(app: App): Screen {
           h('button', {
             type: 'button',
             role: 'radio',
-            class: `char-btn ${p.characterId === c.id ? 'on' : ''}`,
+            class: `char-btn ${p.characterId === c.id ? 'on' : ''} ${c.id === other ? 'taken' : ''}`,
             'aria-checked': String(p.characterId === c.id),
             'aria-label': c.name,
-            disabled: c.id === other,
             style: `--accent:${c.accent}`,
             'data-testid': `char-${i}-${c.id}`,
             onclick: () => {
+              // Picking the other player's character swaps the two, so every character is always available.
+              if (c.id === other) s.players[1 - i].characterId = p.characterId;
               p.characterId = c.id;
               render();
             },
-          }, h('span', { class: 'char-face', html: characterSVG(c, { avatar: true }) }), h('span', { class: 'char-name' }, pair(c.name, c.nameUr))),
+          },
+          h('span', { class: 'char-face', html: characterSVG(c, { avatar: true }) }),
+          h('span', { class: 'char-name' }, pair(c.name, c.nameUr)),
+          c.id === other ? h('span', { class: 'taken-badge', 'aria-hidden': 'true' }, String(2 - i)) : null),
         ),
       );
       return h('section', { class: `player-setup p${i}` },
