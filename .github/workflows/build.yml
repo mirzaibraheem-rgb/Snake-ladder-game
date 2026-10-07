@@ -94,3 +94,29 @@ jobs:
       - run: npm run build:ios
       - name: Build for the iOS Simulator (no signing needed)
         run: xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+
+  handover:
+    name: Complete handover folder (one download)
+    needs: [windows]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build:web
+      - name: Get the Windows .exe files built by the windows job
+        uses: actions/download-artifact@v4
+        with: { name: windows-exe, path: release }
+      - name: Store screenshots at Play and App Store sizes
+        run: |
+          npx vite preview --port 4173 --strictPort &
+          sleep 3
+          node scripts/store-screenshots.mjs
+      - run: node scripts/make-handover.mjs --no-zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SOFT_Snakes_and_Ladders_Handover
+          path: SOFT_Snakes_and_Ladders_Handover
+          retention-days: 90

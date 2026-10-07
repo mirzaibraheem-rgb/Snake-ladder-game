@@ -55,12 +55,13 @@ for (const d of readdirSync('android/app/src/main/res').filter((d) => d.startsWi
   copy(`android/app/src/main/res/${d}`, `06_Store_Publishing/icons/android/${d}`);
 }
 copy('store/screenshots', '06_Store_Publishing/screenshots');
-copy('screenshots/desktop_06_snake_card_both.png', '06_Store_Publishing/screenshots/example_snake_card.png');
+copy(existsSync('screenshots/desktop_06_snake_card_both.png') ? 'screenshots/desktop_06_snake_card_both.png' : 'store/screenshots/ios_ipad_13in_5_snake_message.png', '06_Store_Publishing/screenshots/example_snake_card.png');
 if (existsSync('screenshots')) copy('screenshots', '06_Store_Publishing/screenshots/test_review_all_sizes');
 
 // 07 Source (tracked files only, so no secrets, node_modules or build output)
 dir('07_Source_Code');
 execSync(`git archive HEAD | tar -x -C ${join(OUT, '07_Source_Code')}`);
 
-execSync(`cd ${OUT}/.. && zip -qr -9 ${OUT}.zip ${OUT}`);
+// In CI the folder is uploaded as an artifact (GitHub zips it), so the inner zip is skipped.
+if (!process.argv.includes('--no-zip')) execSync(`zip -qr -9 ${OUT}.zip ${OUT}`);
 console.log(`Done: ${OUT}/ and ${OUT}.zip`);
