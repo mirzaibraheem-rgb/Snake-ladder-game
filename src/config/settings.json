@@ -1,0 +1,17 @@
+{
+  "_help": "Default rules and options. Players can change some of these in the in-game Settings menu (their choice is remembered on that device).",
+  "rules": {
+    "exactRollToFinish": true,
+    "extraTurnOnSix": true,
+    "maxExtraTurnsInARow": 3
+  },
+  "board": "random",
+  "language": "both",
+  "sound": true,
+  "music": true,
+  "maxSnakeMessages": 60,
+  "maxNameLength": 12,
+  "computerRollDelayMs": 1000,
+  "ladderToastMs": 2600,
+  "hopMs": 260
+}

@@ -1,0 +1,351 @@
+# SOFT Snakes and Ladders: Snake Messages
+# Up to 60 messages. Edit text after the colon. Keep each message under 160 characters.
+# EN = English message, UR = Urdu message, TIP_EN / TIP_UR = short safe tip.
+# Only EN is required. Save the file as UTF-8.
+#
+# IMPORTANT: The Urdu text below is a first draft. It MUST be reviewed by a native
+# Urdu speaker (ideally a teacher) before the game is released to children.
+#
+# How it works: every time a player lands on a snake head, the game shows ONE of
+# these messages. Messages are shown in a random order and do not repeat until
+# all of them have been shown.
+#
+# To add a message: copy a whole block (from EN: down to ---) and paste it at the end.
+# To remove a message: delete its whole block, including its --- line.
+# After editing on Windows, close the game and open it again. No rebuild needed.
+
+# ===== Personal information and privacy =====
+
+EN: A new online "friend" asks for your home address so they can send you a gift. Would a real friend need that?
+UR: ایک نیا آن لائن "دوست" تحفہ بھیجنے کے لیے آپ کے گھر کا پتہ مانگتا ہے۔ کیا ایک سچے دوست کو اس کی ضرورت ہوگی؟
+TIP_EN: Never share your address, school, or phone number online. Tell a trusted adult.
+TIP_UR: اپنا پتہ، اسکول یا فون نمبر کبھی آن لائن شیئر نہ کریں۔ کسی بڑے کو بتائیں۔
+---
+EN: You post a photo in your school uniform with the school gate behind you. Who can now guess where you are every day?
+UR: آپ اسکول کی وردی میں، اسکول کے گیٹ کے سامنے تصویر پوسٹ کرتے ہیں۔ اب کون اندازہ لگا سکتا ہے کہ آپ روز کہاں ہوتے ہیں؟
+TIP_EN: Check photos for clues like uniforms, signboards, and house numbers before posting.
+TIP_UR: پوسٹ کرنے سے پہلے تصویر میں وردی، سائن بورڈ اور مکان نمبر جیسے اشارے دیکھ لیں۔
+---
+EN: A quiz app asks for your full name, birthday, and mother's name to tell you "your future". Is it worth it?
+UR: ایک کوئز ایپ آپ کا "مستقبل" بتانے کے لیے آپ کا پورا نام، تاریخ پیدائش اور والدہ کا نام مانگتی ہے۔ کیا یہ ضروری ہے؟
+TIP_EN: Fun quizzes can collect secret answers. Skip apps that ask for personal details.
+TIP_UR: مزے کے کوئز خفیہ معلومات جمع کر سکتے ہیں۔ ذاتی تفصیلات مانگنے والی ایپس سے دور رہیں۔
+---
+EN: You share your live location in a big WhatsApp group so friends can find you at the mela. Who else is in that group?
+UR: آپ میلے میں دوستوں کو بلانے کے لیے بڑے واٹس ایپ گروپ میں اپنی لائیو لوکیشن بھیج دیتے ہیں۔ اس گروپ میں اور کون کون ہے؟
+TIP_EN: Share your location only with family, and turn it off when you no longer need it.
+TIP_UR: اپنی لوکیشن صرف گھر والوں کو بھیجیں اور کام ختم ہوتے ہی بند کر دیں۔
+---
+EN: A stranger in comments asks, "Which class are you in and which area do you live in?" What is the safest reply?
+UR: کمنٹس میں ایک اجنبی پوچھتا ہے: "آپ کس کلاس میں ہو اور کس علاقے میں رہتے ہو؟" سب سے محفوظ جواب کیا ہے؟
+TIP_EN: The safest reply is no reply. Keep your profile private and tell an adult.
+TIP_UR: سب سے محفوظ جواب کوئی جواب نہیں۔ اپنا پروفائل پرائیویٹ رکھیں اور بڑوں کو بتائیں۔
+---
+
+# ===== Passwords and two step verification =====
+
+EN: Your best friend asks for your game password "just to level up for you". Friends share snacks, but should they share passwords?
+UR: آپ کا پکا دوست کہتا ہے: "مجھے اپنا گیم پاس ورڈ دو، میں تمہارا لیول بڑھا دوں گا۔" دوست کھانا بانٹتے ہیں، کیا پاس ورڈ بھی؟
+TIP_EN: Passwords are like toothbrushes. Never share them, not even with friends.
+TIP_UR: پاس ورڈ ٹوتھ برش کی طرح ہے۔ اسے کسی سے شیئر نہ کریں، دوست سے بھی نہیں۔
+---
+EN: Your password is 123456 because it is easy to remember. If it is easy for you, who else is it easy for?
+UR: آپ کا پاس ورڈ 123456 ہے کیونکہ یاد رکھنا آسان ہے۔ اگر آپ کے لیے آسان ہے تو اور کس کے لیے آسان ہوگا؟
+TIP_EN: Make a long password from a fun sentence, like MyCatEats3Mangoes!
+TIP_UR: کسی مزے کے جملے سے لمبا پاس ورڈ بنائیں، جیسے MyCatEats3Mangoes!
+---
+EN: You use the same password for your games, email, and TikTok. If one is stolen, what happens to the others?
+UR: آپ گیمز، ای میل اور ٹک ٹاک سب کے لیے ایک ہی پاس ورڈ رکھتے ہیں۔ اگر ایک چوری ہو گیا تو باقی کا کیا ہوگا؟
+TIP_EN: Use a different password for each important account. Ask an adult to help you keep track.
+TIP_UR: ہر اہم اکاؤنٹ کا پاس ورڈ الگ رکھیں۔ یاد رکھنے کے لیے کسی بڑے سے مدد لیں۔
+---
+EN: A message says, "Send us the 6 digit code we just sent to your phone." Why would anyone need your secret code?
+UR: ایک میسج آتا ہے: "ابھی آپ کے فون پر آنے والا 6 ہندسوں کا کوڈ ہمیں بھیجیں۔" کسی کو آپ کا خفیہ کوڈ کیوں چاہیے؟
+TIP_EN: Never share a code you receive by SMS or WhatsApp. It is a key to your account.
+TIP_UR: ایس ایم ایس یا واٹس ایپ پر آنے والا کوڈ کبھی کسی کو نہ بتائیں۔ یہ آپ کے اکاؤنٹ کی چابی ہے۔
+---
+EN: You logged in to your account on a cyber cafe computer and walked away. Who can open it now?
+UR: آپ نے انٹرنیٹ کیفے کے کمپیوٹر پر اپنا اکاؤنٹ کھولا اور اٹھ کر چلے گئے۔ اب اسے کون کھول سکتا ہے؟
+TIP_EN: Always log out on shared devices, and turn on two step verification with an adult's help.
+TIP_UR: مشترکہ ڈیوائس پر ہمیشہ لاگ آؤٹ کریں، اور کسی بڑے کی مدد سے ٹو سٹیپ ویریفکیشن آن کریں۔
+---
+
+# ===== Strangers and red flags =====
+
+EN: Someone in a game chat says they are 13 too, and asks you to keep your chats "our little secret". Why a secret?
+UR: گیم چیٹ میں کوئی کہتا ہے کہ وہ بھی 13 سال کا ہے، اور کہتا ہے کہ ہماری باتیں "ہمارا راز" رہیں۔ راز کیوں؟
+TIP_EN: Safe people do not ask you to keep secrets from your family. Tell a trusted adult.
+TIP_UR: اچھے لوگ آپ کو گھر والوں سے باتیں چھپانے کو نہیں کہتے۔ کسی بھروسے والے بڑے کو بتائیں۔
+---
+EN: An online friend asks you to switch from the game chat to a private app "where no one can see". What do you do?
+UR: ایک آن لائن دوست کہتا ہے کہ گیم چیٹ چھوڑ کر ایک پرائیویٹ ایپ پر بات کریں "جہاں کوئی نہ دیکھے"۔ آپ کیا کریں گے؟
+TIP_EN: Moving chats to a hidden place is a red flag. Stop chatting and tell an adult.
+TIP_UR: بات چیت کو چھپی جگہ لے جانا خطرے کی نشانی ہے۔ بات بند کریں اور بڑوں کو بتائیں۔
+---
+EN: Someone you met online keeps sending you free game coins and gifts. What might they want back later?
+UR: آن لائن ملنے والا کوئی شخص آپ کو بار بار مفت گیم کوائنز اور تحفے بھیجتا ہے۔ بعد میں وہ بدلے میں کیا چاہ سکتا ہے؟
+TIP_EN: Gifts from strangers can be a trick to build trust. Do not accept, and tell an adult.
+TIP_UR: اجنبی کے تحفے اعتماد جیتنے کی چال ہو سکتے ہیں۔ قبول نہ کریں اور بڑوں کو بتائیں۔
+---
+EN: A video call pops up from a number you do not know. Should you pick it up to see who it is?
+UR: ایک انجان نمبر سے ویڈیو کال آ رہی ہے۔ کیا دیکھنے کے لیے اٹھا لیں کہ کون ہے؟
+TIP_EN: Do not answer video calls from unknown numbers. Show the number to an adult.
+TIP_UR: انجان نمبر کی ویڈیو کال نہ اٹھائیں۔ وہ نمبر کسی بڑے کو دکھائیں۔
+---
+EN: A stranger says, "You are so mature for your age, your parents just do not understand you." Is that a compliment or a trick?
+UR: ایک اجنبی کہتا ہے: "تم اپنی عمر سے بہت سمجھدار ہو، تمہارے والدین تمہیں نہیں سمجھتے۔" یہ تعریف ہے یا چال؟
+TIP_EN: Anyone who tries to turn you against your family is not safe. Talk to a trusted adult.
+TIP_UR: جو آپ کو گھر والوں سے دور کرنے کی کوشش کرے وہ محفوظ نہیں۔ کسی بڑے سے بات کریں۔
+---
+
+# ===== Cyberbullying and kindness =====
+
+EN: Your class group is laughing at a funny edited photo of a classmate. Everyone adds a laughing emoji. Do you?
+UR: کلاس گروپ میں ایک ہم جماعت کی بدلی ہوئی مزاحیہ تصویر پر سب ہنس رہے ہیں اور ہنسنے والے ایموجی بھیج رہے ہیں۔ کیا آپ بھی بھیجیں گے؟
+TIP_EN: A laughing emoji can still hurt. Do not join in, and support the person being teased.
+TIP_UR: ہنسنے والا ایموجی بھی دل دکھا سکتا ہے۔ اس میں شامل نہ ہوں اور جس کا مذاق اڑ رہا ہو اس کا ساتھ دیں۔
+---
+EN: You are angry with a friend and want to post about them right now. What could happen if you wait ten minutes?
+UR: آپ کو ایک دوست پر غصہ ہے اور ابھی اس کے بارے میں پوسٹ کرنا چاہتے ہیں۔ دس منٹ رک جائیں تو کیا ہوگا؟
+TIP_EN: Pause before you post when you are upset. Words online can stay forever.
+TIP_UR: غصے میں پوسٹ کرنے سے پہلے رک جائیں۔ آن لائن الفاظ ہمیشہ رہ سکتے ہیں۔
+---
+EN: Someone keeps sending you mean messages every day. Should you reply with something even meaner?
+UR: کوئی آپ کو روز برے میسج بھیجتا ہے۔ کیا آپ اس سے بھی برا جواب دیں؟
+TIP_EN: Do not reply. Save the messages, block the person, and tell a trusted adult.
+TIP_UR: جواب نہ دیں۔ میسج محفوظ کریں، اس شخص کو بلاک کریں اور کسی بڑے کو بتائیں۔
+---
+EN: A new student is left out of every class group chat. How would it feel to be the only one not added?
+UR: ایک نئے طالب علم کو کلاس کے کسی گروپ میں شامل نہیں کیا جاتا۔ اکیلے رہ جانا کیسا محسوس ہوتا ہوگا؟
+TIP_EN: Leaving someone out on purpose is a kind of bullying. Be the one who includes others.
+TIP_UR: جان بوجھ کر کسی کو الگ رکھنا بھی تنگ کرنا ہے۔ آپ دوسروں کو ساتھ ملانے والے بنیں۔
+---
+EN: You see a cruel comment under your cousin's TikTok video. Is it none of your business?
+UR: آپ اپنے کزن کی ٹک ٹاک ویڈیو کے نیچے ایک بہت برا کمنٹ دیکھتے ہیں۔ کیا یہ آپ کا مسئلہ نہیں؟
+TIP_EN: Report the comment and send your cousin a kind message. Kindness is contagious.
+TIP_UR: کمنٹ کو رپورٹ کریں اور اپنے کزن کو اچھا پیغام بھیجیں۔ مہربانی پھیلتی ہے۔
+---
+
+# ===== Fake news and checking information =====
+
+EN: A family WhatsApp group shares, "Drinking hot water cures every illness! Forward to 10 people!" Should you forward it?
+UR: فیملی واٹس ایپ گروپ میں آتا ہے: "گرم پانی پینے سے ہر بیماری ٹھیک ہو جاتی ہے! 10 لوگوں کو بھیجیں!" کیا آپ آگے بھیجیں گے؟
+TIP_EN: Messages that say "forward to everyone" are often false. Check with a trusted source first.
+TIP_UR: "سب کو بھیجیں" والے پیغامات اکثر جھوٹے ہوتے ہیں۔ پہلے کسی قابل اعتماد ذریعے سے تصدیق کریں۔
+---
+EN: A video shows a famous building on fire, but the clip looks a bit strange. How can you tell if it is real?
+UR: ایک ویڈیو میں ایک مشہور عمارت جلتی دکھائی گئی ہے، لیکن ویڈیو کچھ عجیب لگتی ہے۔ آپ کیسے جانیں کہ یہ اصلی ہے؟
+TIP_EN: Videos can be edited or made by AI. Look for the same news on trusted news channels.
+TIP_UR: ویڈیوز بدلی جا سکتی ہیں یا اے آئی سے بنائی جا سکتی ہیں۔ یہی خبر معتبر نیوز چینلز پر دیکھیں۔
+---
+EN: A message says schools will be closed tomorrow, with no name of who sent it first. Do you tell all your friends?
+UR: ایک میسج میں لکھا ہے کہ کل اسکول بند رہیں گے، لیکن یہ نہیں لکھا کہ کس نے بھیجا۔ کیا آپ سب دوستوں کو بتا دیں گے؟
+TIP_EN: Check news with your school or an official page before sharing it.
+TIP_UR: آگے بھیجنے سے پہلے اسکول یا سرکاری پیج سے خبر کی تصدیق کریں۔
+---
+EN: A headline makes you really angry in one second. Why might someone have written it that way?
+UR: ایک سرخی پڑھتے ہی آپ کو بہت غصہ آ جاتا ہے۔ کسی نے اسے ایسے کیوں لکھا ہوگا؟
+TIP_EN: Shocking headlines are made to be shared. Read the full story and check the source.
+TIP_UR: چونکا دینے والی سرخیاں شیئر کروانے کے لیے بنتی ہیں۔ پوری خبر پڑھیں اور ذریعہ دیکھیں۔
+---
+EN: A post says a famous cricketer is giving free phones to everyone who likes and shares. Too good to be true?
+UR: ایک پوسٹ میں لکھا ہے کہ ایک مشہور کرکٹر لائک اور شیئر کرنے والوں کو مفت فون دے رہا ہے۔ کیا یہ سچ ہو سکتا ہے؟
+TIP_EN: If it sounds too good to be true, it usually is. Do not like, share, or click.
+TIP_UR: جو بات سچ ہونے کے لیے بہت اچھی لگے وہ اکثر جھوٹ ہوتی ہے۔ لائک، شیئر یا کلک نہ کریں۔
+---
+
+# ===== Scams and phishing =====
+
+EN: A caller says, "You won 50,000 rupees in a lucky draw! Tell us the code on your Easypaisa or JazzCash to claim it."
+UR: ایک کال آتی ہے: "آپ نے لکی ڈرا میں 50,000 روپے جیتے ہیں! انعام لینے کے لیے ایزی پیسہ یا جاز کیش کا کوڈ بتائیں۔"
+TIP_EN: Real prizes never ask for your code or PIN. Hang up and tell an adult right away.
+TIP_UR: اصلی انعام کبھی کوڈ یا پن نہیں مانگتا۔ فون بند کریں اور فوراً بڑوں کو بتائیں۔
+---
+EN: A text says your SIM will be blocked today unless you click a link. Why are they in such a hurry?
+UR: ایک میسج آتا ہے کہ اگر آپ نے لنک پر کلک نہ کیا تو آج آپ کی سم بند ہو جائے گی۔ انہیں اتنی جلدی کیوں ہے؟
+TIP_EN: Scammers rush you so you do not think. Do not click; ask an adult to check.
+TIP_UR: دھوکے باز جلدی کرواتے ہیں تاکہ آپ سوچ نہ سکیں۔ کلک نہ کریں، بڑوں سے پوچھیں۔
+---
+EN: Someone calls pretending to be your uncle's friend: "Your uncle is in trouble, send money now!" What should you do first?
+UR: کوئی آپ کے چچا کا دوست بن کر کال کرتا ہے: "تمہارے چچا مشکل میں ہیں، فوراً پیسے بھیجو!" آپ پہلے کیا کریں گے؟
+TIP_EN: Stop and call your family on a number you already know before doing anything.
+TIP_UR: رک جائیں اور کچھ کرنے سے پہلے گھر والوں کو ان کے پرانے نمبر پر فون کریں۔
+---
+EN: A website offers free unlimited diamonds for your game if you enter your login details. What is the catch?
+UR: ایک ویب سائٹ کہتی ہے کہ لاگ ان کی تفصیلات دیں تو گیم کے لیے بے حساب مفت ہیرے ملیں گے۔ اس میں چال کیا ہے؟
+TIP_EN: Free diamond and coin generators steal accounts. Only use the official game store.
+TIP_UR: مفت ہیرے اور کوائنز دینے والی سائٹس اکاؤنٹ چوری کرتی ہیں۔ صرف اصلی گیم اسٹور استعمال کریں۔
+---
+EN: A link in a message looks like your bank's website, but one letter is different. Would you notice?
+UR: میسج میں ایک لنک بینک کی ویب سائٹ جیسا لگتا ہے، لیکن ایک حرف مختلف ہے۔ کیا آپ کو پتہ چلے گا؟
+TIP_EN: Fake links copy real names. Do not open links in messages; type the address yourself or ask an adult.
+TIP_UR: جعلی لنک اصلی ناموں کی نقل کرتے ہیں۔ میسج والے لنک نہ کھولیں، خود پتہ لکھیں یا بڑوں سے پوچھیں۔
+---
+
+# ===== Photos and digital footprint =====
+
+EN: You send a silly photo to just one friend. Can you be sure it stays with just one friend?
+UR: آپ ایک مزاحیہ تصویر صرف ایک دوست کو بھیجتے ہیں۔ کیا آپ یقین سے کہہ سکتے ہیں کہ وہ صرف اسی کے پاس رہے گی؟
+TIP_EN: Once a photo is sent, you lose control of it. Only send what you are happy for anyone to see.
+TIP_UR: تصویر بھیجنے کے بعد وہ آپ کے اختیار میں نہیں رہتی۔ صرف وہی بھیجیں جو کوئی بھی دیکھ لے تو فکر نہ ہو۔
+---
+EN: You deleted an old post, but someone had already taken a screenshot. Is it really gone?
+UR: آپ نے ایک پرانی پوسٹ ڈیلیٹ کر دی، لیکن کسی نے پہلے ہی اسکرین شاٹ لے لیا تھا۔ کیا وہ واقعی ختم ہو گئی؟
+TIP_EN: The internet has a long memory. Think before you post, not after.
+TIP_UR: انٹرنیٹ کی یادداشت لمبی ہے۔ پوسٹ کرنے سے پہلے سوچیں، بعد میں نہیں۔
+---
+EN: Your friend posts a group photo where you look sleepy and silly. You did not say yes. Is that fair?
+UR: آپ کا دوست ایک گروپ فوٹو پوسٹ کرتا ہے جس میں آپ سوئے ہوئے اور عجیب لگ رہے ہیں، آپ کی اجازت کے بغیر۔ کیا یہ ٹھیک ہے؟
+TIP_EN: Always ask before posting photos of other people, and ask others to do the same for you.
+TIP_UR: دوسروں کی تصویر پوسٹ کرنے سے پہلے ہمیشہ اجازت لیں، اور دوسروں سے بھی یہی کہیں۔
+---
+EN: Someone online asks you for a photo of yourself "just to see what you look like". What do you say?
+UR: آن لائن کوئی کہتا ہے کہ اپنی ایک تصویر بھیجو "بس یہ دیکھنے کے لیے کہ تم کیسے لگتے ہو"۔ آپ کیا کہیں گے؟
+TIP_EN: Never send photos to people you only know online. Say no and tell a trusted adult.
+TIP_UR: صرف آن لائن جاننے والوں کو کبھی تصویر نہ بھیجیں۔ انکار کریں اور کسی بڑے کو بتائیں۔
+---
+EN: In ten years, a university or a new boss might search your name. What would you like them to find?
+UR: دس سال بعد کوئی یونیورسٹی یا نیا باس آپ کا نام سرچ کر سکتا ہے۔ آپ کیا چاہیں گے کہ انہیں کیا ملے؟
+TIP_EN: Build a digital footprint you are proud of: kind words, good work, and helpful posts.
+TIP_UR: ایسے ڈیجیٹل نشان چھوڑیں جن پر فخر ہو: اچھے الفاظ، اچھا کام اور مددگار پوسٹس۔
+---
+
+# ===== Gaming chats and in game purchases =====
+
+EN: A player in your game team offers to trade a rare skin if you give them your account for one day. Fair trade?
+UR: گیم ٹیم کا ایک کھلاڑی کہتا ہے کہ ایک دن کے لیے اپنا اکاؤنٹ دو تو وہ تمہیں نایاب اسکن دے گا۔ کیا یہ اچھا سودا ہے؟
+TIP_EN: Never give your account to anyone. Account trades are a common way to steal.
+TIP_UR: اپنا اکاؤنٹ کبھی کسی کو نہ دیں۔ اکاؤنٹ کا لین دین چوری کا عام طریقہ ہے۔
+---
+EN: Your game says "Buy now! Offer ends in 5 minutes!" and your parent's card is saved on the phone. What do you do?
+UR: گیم میں لکھا آتا ہے: "ابھی خریدیں! آفر 5 منٹ میں ختم!" اور فون میں والدین کا کارڈ محفوظ ہے۔ آپ کیا کریں گے؟
+TIP_EN: Always ask before buying anything in a game. Countdown timers are there to rush you.
+TIP_UR: گیم میں کچھ بھی خریدنے سے پہلے ہمیشہ اجازت لیں۔ الٹی گنتی آپ کو جلدی کروانے کے لیے ہے۔
+---
+EN: Players in voice chat start using bad words and shouting at you. Do you have to stay and listen?
+UR: وائس چیٹ میں کھلاڑی گالیاں دینے اور آپ پر چلانے لگتے ہیں۔ کیا آپ کو وہیں رہ کر سننا ضروری ہے؟
+TIP_EN: You can mute, block, and report. Leaving a toxic game is a smart move.
+TIP_UR: آپ میوٹ، بلاک اور رپورٹ کر سکتے ہیں۔ برے ماحول والا گیم چھوڑ دینا سمجھداری ہے۔
+---
+EN: An older player says, "Add me on Instagram, I will teach you pro tricks." Why move outside the game?
+UR: ایک بڑا کھلاڑی کہتا ہے: "مجھے انسٹاگرام پر ایڈ کرو، میں تمہیں پرو ٹرکس سکھاؤں گا۔" گیم سے باہر کیوں جانا؟
+TIP_EN: Keep game friends inside the game, and check with an adult before adding anyone.
+TIP_UR: گیم کے دوستوں کو گیم تک ہی رکھیں، اور کسی کو ایڈ کرنے سے پہلے بڑوں سے پوچھیں۔
+---
+EN: A mystery box in your game costs real money and you might get nothing good. Is that a game or a gamble?
+UR: گیم میں ایک پراسرار باکس اصلی پیسوں کا ہے اور شاید اس میں کچھ اچھا نہ نکلے۔ یہ کھیل ہے یا جوا؟
+TIP_EN: Loot boxes can feel like gambling. Set a limit with your family, or skip them.
+TIP_UR: لوٹ باکس جوئے جیسے لگ سکتے ہیں۔ گھر والوں کے ساتھ حد طے کریں یا ان سے دور رہیں۔
+---
+
+# ===== Screen time and wellbeing =====
+
+EN: You planned to watch one short video before bed. It is now two hours later. What happened?
+UR: آپ نے سونے سے پہلے صرف ایک چھوٹی ویڈیو دیکھنے کا سوچا تھا۔ اب دو گھنٹے گزر گئے ہیں۔ یہ کیسے ہوا؟
+TIP_EN: Apps are designed to keep you scrolling. Set a timer and put the phone away at bedtime.
+TIP_UR: ایپس اس طرح بنی ہیں کہ آپ اسکرول کرتے رہیں۔ ٹائمر لگائیں اور سونے کے وقت فون دور رکھیں۔
+---
+EN: Your friend's photos always look perfect, and you start feeling your life is boring. Is what you see the full story?
+UR: آپ کے دوست کی تصویریں ہمیشہ بہترین لگتی ہیں اور آپ کو اپنی زندگی بور لگنے لگتی ہے۔ کیا جو نظر آتا ہے وہ پوری کہانی ہے؟
+TIP_EN: People post their best moments, not every moment. Be kind to yourself.
+TIP_UR: لوگ اپنے بہترین لمحے پوسٹ کرتے ہیں، ہر لمحہ نہیں۔ اپنے ساتھ نرمی کریں۔
+---
+EN: Dinner is ready, but you are in the middle of a game level. Which can wait: the game or the family?
+UR: کھانا تیار ہے لیکن آپ گیم کے ایک لیول کے بیچ میں ہیں۔ کس کا انتظار ہو سکتا ہے: گیم یا گھر والے؟
+TIP_EN: Make screen free times, like meals and family time. The game will still be there.
+TIP_UR: کھانے اور گھر والوں کے وقت کو اسکرین سے پاک رکھیں۔ گیم کہیں نہیں جائے گا۔
+---
+EN: You feel tired, your eyes hurt, and you skipped playing outside again. What is your body telling you?
+UR: آپ تھکے ہوئے ہیں، آنکھیں دکھ رہی ہیں اور آج پھر باہر کھیلنے نہیں گئے۔ آپ کا جسم آپ کو کیا بتا رہا ہے؟
+TIP_EN: Take breaks every 20 minutes, look far away, and move around. Your body needs play too.
+TIP_UR: ہر 20 منٹ بعد وقفہ لیں، دور دیکھیں اور چلیں پھریں۔ جسم کو بھی کھیل چاہیے۔
+---
+EN: Your post got only 3 likes and you feel upset. Do likes decide how good you are?
+UR: آپ کی پوسٹ پر صرف 3 لائکس آئے اور آپ اداس ہو گئے۔ کیا لائکس طے کرتے ہیں کہ آپ کتنے اچھے ہیں؟
+TIP_EN: Your worth is not a number on a screen. Talk to someone you trust if you feel low.
+TIP_UR: آپ کی قدر اسکرین کا کوئی نمبر نہیں۔ اداس ہوں تو کسی بھروسے والے سے بات کریں۔
+---
+
+# ===== Copyright and respecting creators =====
+
+EN: You find an amazing song and use it in your video, saying it is your own. Is that fair to the singer?
+UR: آپ کو ایک زبردست گانا ملتا ہے اور آپ اسے اپنی ویڈیو میں اپنا کہہ کر لگا دیتے ہیں۔ کیا یہ گلوکار کے ساتھ انصاف ہے؟
+TIP_EN: Give credit to creators, and use music and pictures that you are allowed to use.
+TIP_UR: بنانے والوں کو کریڈٹ دیں، اور وہی گانے اور تصاویر استعمال کریں جن کی اجازت ہو۔
+---
+EN: You copy a whole school project from a website and hand it in. Who did the real work?
+UR: آپ ایک ویب سائٹ سے پورا اسکول پراجیکٹ کاپی کر کے جمع کرا دیتے ہیں۔ اصل محنت کس نے کی؟
+TIP_EN: Use websites to learn, then write in your own words and mention your sources.
+TIP_UR: ویب سائٹس سے سیکھیں، پھر اپنے الفاظ میں لکھیں اور ذرائع کا ذکر کریں۔
+---
+EN: A website lets you download a new movie free, a day after it came out in cinemas. Is it really free?
+UR: ایک ویب سائٹ سینما میں آنے کے ایک دن بعد نئی فلم مفت ڈاؤن لوڈ کرنے دیتی ہے۔ کیا یہ واقعی مفت ہے؟
+TIP_EN: Pirated downloads break copyright and often hide viruses. Use official apps.
+TIP_UR: چوری کی ڈاؤن لوڈز کاپی رائٹ توڑتی ہیں اور ان میں اکثر وائرس ہوتے ہیں۔ اصلی ایپس استعمال کریں۔
+---
+EN: You repost a cartoonist's drawing and crop out their name. How would you feel if someone did that to you?
+UR: آپ ایک کارٹونسٹ کی ڈرائنگ دوبارہ پوسٹ کرتے ہیں اور اس کا نام کاٹ دیتے ہیں۔ اگر کوئی آپ کے ساتھ ایسا کرے تو کیسا لگے گا؟
+TIP_EN: Keep the creator's name on their work, and share the original post when you can.
+TIP_UR: بنانے والے کا نام اس کے کام پر رہنے دیں، اور ہو سکے تو اصل پوسٹ شیئر کریں۔
+---
+EN: You make a great drawing and someone else posts it as theirs. What can you do?
+UR: آپ ایک شاندار ڈرائنگ بناتے ہیں اور کوئی اور اسے اپنے نام سے پوسٹ کر دیتا ہے۔ آپ کیا کر سکتے ہیں؟
+TIP_EN: Your work belongs to you. Report it on the app and ask an adult to help.
+TIP_UR: آپ کا کام آپ کا ہے۔ ایپ پر رپورٹ کریں اور کسی بڑے سے مدد لیں۔
+---
+
+# ===== Reporting and blocking =====
+
+EN: An account keeps sending you messages you do not like, even after you said stop. Is blocking rude?
+UR: ایک اکاؤنٹ آپ کے منع کرنے کے بعد بھی ایسے میسج بھیجتا رہتا ہے جو آپ کو پسند نہیں۔ کیا بلاک کرنا بدتمیزی ہے؟
+TIP_EN: Blocking is not rude; it is smart. You are allowed to protect yourself.
+TIP_UR: بلاک کرنا بدتمیزی نہیں، سمجھداری ہے۔ آپ کو اپنی حفاظت کا پورا حق ہے۔
+---
+EN: You see a video that makes you feel scared or uncomfortable. Should you just scroll past and forget it?
+UR: آپ ایک ایسی ویڈیو دیکھتے ہیں جس سے آپ ڈر جاتے ہیں یا بے چین ہو جاتے ہیں۔ کیا بس آگے اسکرول کر کے بھول جائیں؟
+TIP_EN: Report it, close it, and talk about it with a trusted adult. Your feelings matter.
+TIP_UR: اسے رپورٹ کریں، بند کریں اور کسی بڑے سے بات کریں۔ آپ کے احساسات اہم ہیں۔
+---
+EN: A fake account is using your friend's name and photo to ask people for money. What can you do to help?
+UR: ایک جعلی اکاؤنٹ آپ کے دوست کا نام اور تصویر لگا کر لوگوں سے پیسے مانگ رہا ہے۔ آپ کیسے مدد کر سکتے ہیں؟
+TIP_EN: Report the fake account and tell your friend. In Pakistan, adults can also report to the FIA cybercrime helpline.
+TIP_UR: جعلی اکاؤنٹ کو رپورٹ کریں اور دوست کو بتائیں۔ پاکستان میں بڑے ایف آئی اے سائبر کرائم ہیلپ لائن پر بھی شکایت کر سکتے ہیں۔
+---
+EN: Someone threatens to share your chats unless you do what they say. Do you have to handle this alone?
+UR: کوئی دھمکی دیتا ہے کہ اگر آپ نے اس کی بات نہ مانی تو وہ آپ کی چیٹس سب کو دکھا دے گا۔ کیا آپ کو اکیلے نمٹنا ہوگا؟
+TIP_EN: Never. Do not do what they ask. Keep the messages and tell a trusted adult right away.
+TIP_UR: ہرگز نہیں۔ ان کی بات نہ مانیں۔ میسج محفوظ رکھیں اور فوراً کسی بڑے کو بتائیں۔
+---
+EN: You blocked someone, but they made a new account to message you again. Is it your fault?
+UR: آپ نے کسی کو بلاک کیا، لیکن اس نے نیا اکاؤنٹ بنا کر پھر میسج کیا۔ کیا یہ آپ کی غلطی ہے؟
+TIP_EN: It is not your fault. Block again, report, and ask an adult to help you change your privacy settings.
+TIP_UR: یہ آپ کی غلطی نہیں۔ دوبارہ بلاک اور رپورٹ کریں، اور بڑوں کی مدد سے پرائیویسی سیٹنگز بدلیں۔
+---
+
+# ===== Always tell a trusted adult =====
+
+EN: You clicked a strange link by mistake and now you are scared to tell anyone. What is the best next step?
+UR: آپ نے غلطی سے ایک عجیب لنک پر کلک کر دیا اور اب کسی کو بتانے سے ڈر لگ رہا ہے۔ اب سب سے اچھا قدم کیا ہے؟
+TIP_EN: Everyone makes mistakes. Telling an adult quickly helps fix it faster.
+TIP_UR: غلطی سب سے ہوتی ہے۔ جلدی بڑوں کو بتانے سے مسئلہ جلد حل ہوتا ہے۔
+---
+EN: You worry that if you tell your parents about a problem online, they will take your phone away. Should you stay quiet?
+UR: آپ کو ڈر ہے کہ آن لائن مسئلہ بتایا تو والدین فون لے لیں گے۔ کیا خاموش رہنا چاہیے؟
+TIP_EN: Staying quiet lets problems grow. Choose a trusted adult and tell them how you feel.
+TIP_UR: خاموشی سے مسئلے بڑھتے ہیں۔ کسی بھروسے والے بڑے کو چنیں اور اپنی بات بتائیں۔
+---
+EN: Who are three grown ups you could talk to if something online made you feel bad?
+UR: اگر آن لائن کسی بات سے آپ کو برا لگے تو آپ کن تین بڑوں سے بات کر سکتے ہیں؟
+TIP_EN: Make your list now: a parent, a teacher, an older cousin, or an aunt or uncle.
+TIP_UR: ابھی اپنی فہرست بنائیں: والدین، استاد، بڑا کزن، خالہ، پھوپھی یا چچا۔
+---
+EN: Your younger brother is chatting with someone he met in a game and hides the phone when you walk in. What do you do?
+UR: آپ کا چھوٹا بھائی گیم میں ملنے والے کسی شخص سے بات کرتا ہے اور آپ کے آتے ہی فون چھپا لیتا ہے۔ آپ کیا کریں گے؟
+TIP_EN: Gently talk to him and tell a trusted adult. Looking out for each other is what families do.
+TIP_UR: پیار سے اس سے بات کریں اور کسی بڑے کو بتائیں۔ ایک دوسرے کا خیال رکھنا ہی خاندان ہے۔
+---
+EN: An app asks to use your camera, microphone, and contacts, but it is only a flashlight app. Why does it need all that?
+UR: ایک ٹارچ ایپ آپ کا کیمرہ، مائیک اور کانٹیکٹس استعمال کرنے کی اجازت مانگتی ہے۔ اسے یہ سب کیوں چاہیے؟
+TIP_EN: Ask an adult before installing apps, and say no to permissions an app does not need.
+TIP_UR: ایپ انسٹال کرنے سے پہلے بڑوں سے پوچھیں، اور غیر ضروری اجازتوں سے انکار کریں۔
+---

@@ -1,0 +1,38 @@
+# SOFT Snakes and Ladders: Ladder and Train Messages
+# A short, happy message shown for about 2 to 3 seconds when a player climbs a
+# ladder or rides a train. Each message praises the safe habit painted on the
+# square where the ladder or train starts.
+# SQUARE = the start square of the ladder or train (do not change these numbers
+# unless the board art changes). EN = English, UR = Urdu.
+# Keep messages short (under 90 characters). Save the file as UTF-8.
+#
+# IMPORTANT: The Urdu text must be reviewed by a native Urdu speaker before release.
+
+SQUARE: 3
+EN: Great choice! When your family knows the apps you use, you are safer. Up you go!
+UR: بہت خوب! جب گھر والوں کو آپ کی ایپس کا پتہ ہو تو آپ زیادہ محفوظ ہیں۔ اوپر چلیں!
+---
+SQUARE: 6
+EN: Smart move! Checking if information is true helps everyone. Up you go!
+UR: سمجھداری! معلومات کی تصدیق کرنا سب کے لیے اچھا ہے۔ اوپر چلیں!
+---
+SQUARE: 8
+EN: All aboard! Opening only safe messages and asking elders keeps you on track.
+UR: سوار ہو جائیں! صرف محفوظ پیغامات کھولنا اور بڑوں سے پوچھنا آپ کو صحیح راستے پر رکھتا ہے۔
+---
+SQUARE: 14
+EN: Well done! Respecting copyright means respecting creators. Climb up!
+UR: شاباش! کاپی رائٹ کا احترام، بنانے والوں کا احترام ہے۔ اوپر چڑھیں!
+---
+SQUARE: 18
+EN: Wise thinking! Not everyone online is who they say they are. Up you go!
+UR: عقلمندی! آن لائن ہر کوئی وہ نہیں ہوتا جو وہ کہتا ہے۔ اوپر چلیں!
+---
+SQUARE: 20
+EN: Choo choo! Talking to your elders before meeting anyone keeps you safe.
+UR: چھک چھک! کسی سے ملنے سے پہلے بڑوں سے بات کرنا آپ کو محفوظ رکھتا ہے۔
+---
+SQUARE: 23
+EN: Kindness wins! Being polite online makes the internet better. Big climb!
+UR: مہربانی جیت گئی! آن لائن اچھا رویہ انٹرنیٹ کو بہتر بناتا ہے۔ لمبی چھلانگ!
+---

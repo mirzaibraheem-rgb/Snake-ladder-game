@@ -1,0 +1,42 @@
+# Windows desktop build. Run: npm run build:win
+appId: org.soft.snakesladders
+productName: SOFT Snakes and Ladders
+copyright: SOFT Safe Online Future for Teens
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**/*
+  - electron/**/*
+  - package.json
+  - "!node_modules/**/*"
+# The editable messages folder is copied next to the installed .exe,
+# so NGO staff can edit content/snake_messages.txt without rebuilding.
+extraFiles:
+  - from: content
+    to: content
+asar: true
+compression: maximum
+# Only English and Urdu Chromium language packs are needed (saves about 45 MB).
+electronLanguages:
+  - en-US
+  - ur
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: SOFT Snakes and Ladders
+  artifactName: SOFT-Snakes-Ladders-Setup.exe
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+portable:
+  artifactName: SOFT-Snakes-Ladders-Portable.exe

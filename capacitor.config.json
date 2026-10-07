@@ -1,0 +1,16 @@
+{
+  "appId": "org.soft.snakesladders",
+  "appName": "SOFT Snakes and Ladders",
+  "webDir": "dist",
+  "backgroundColor": "#5B1E96",
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  },
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#5B1E96",
+    "scrollEnabled": false
+  }
+}

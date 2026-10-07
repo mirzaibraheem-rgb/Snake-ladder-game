@@ -1,0 +1,48 @@
+{
+  "name": "soft-snakes-ladders",
+  "productName": "SOFT Snakes and Ladders",
+  "version": "1.0.0",
+  "description": "SOFT: Safe Online Future for Teens. A Snakes and Ladders game that teaches safe online behavior.",
+  "author": "SOFT: Safe Online Future for Teens",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build:web": "vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:ui": "playwright test",
+    "simulate": "vitest run tests/simulate.test.ts",
+    "electron": "npm run build:web && electron .",
+    "build:win": "npm run build:web && electron-builder --win nsis portable --x64 --publish never",
+    "build:android": "npm run build:web && cap sync android && cd android && ./gradlew bundleRelease",
+    "build:ios": "npm run build:web && cap sync ios",
+    "icons": "node scripts/make-icons.mjs",
+    "docs:pdf": "node scripts/make-pdfs.mjs",
+    "handover": "node scripts/make-handover.mjs"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.2",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "electron": "^44.6.0",
+    "electron-builder": "^26.15.3",
+    "marked": "^18.1.0",
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/ios": "^8.5.2",
+    "@fontsource/baloo-2": "^5.3.0",
+    "@fontsource/noto-nastaliq-urdu": "^5.3.0"
+  }
+}

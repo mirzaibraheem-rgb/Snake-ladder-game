@@ -1,0 +1,59 @@
+# SOFT Snakes and Ladders: Tile Texts
+# The words painted on the board squares, with an English translation.
+# Used in the win screen lesson recap, the calibration overlay, and the short
+# message shown when a player lands on square 26.
+# SQUARE = square number, EN = English, UR = Urdu (as painted on the board art).
+# Save the file as UTF-8. If you change the board art, update this file too.
+
+SQUARE: 1
+EN: Online
+UR: آن لائن
+---
+SQUARE: 3
+EN: My family knows which websites and apps I use.
+UR: گھر والوں کے علم میں ہونا کہ کون سی ویب سائٹس اور ایپس استعمال کی جا رہی ہیں۔
+---
+SQUARE: 6
+EN: Always check if online information is correct.
+UR: ہمیشہ یہ چیک کرنا کہ کیا آن لائن معلومات درست ہے۔
+---
+SQUARE: 8
+EN: Only open safe messages. If in doubt, ask your elders.
+UR: صرف محفوظ پیغامات کھولنا، شک ہو تو بڑوں سے پوچھنا۔
+---
+SQUARE: 10
+EN: Sharing and forwarding unverified information.
+UR: غیر تصدیق شدہ معلومات شیئر کرنا اور فارورڈ کرنا۔
+---
+SQUARE: 14
+EN: I know that online content has copyright.
+UR: مجھے معلوم ہے کہ آن لائن مواد کے حقوقِ اشاعت ہوتے ہیں۔
+---
+SQUARE: 18
+EN: I know people online are strangers and are not always truthful.
+UR: مجھے معلوم ہے کہ انٹرنیٹ پر لوگ اجنبی ہوتے ہیں اور وہ ہمیشہ سچے نہیں ہوتے۔
+---
+SQUARE: 20
+EN: If someone online asks to meet, talk to your elders first.
+UR: اگر کوئی آن لائن ملنے کو کہے تو پہلے اپنے بڑوں سے بات کرنا۔
+---
+SQUARE: 23
+EN: Never be rude to anyone online.
+UR: آن لائن کسی کے ساتھ بدتمیزی نہ کرنا۔
+---
+SQUARE: 25
+EN: Sharing your photos publicly.
+UR: اپنی تصاویر کو عوامی طور پر شیئر کرنا۔
+---
+SQUARE: 26
+EN: Keep your information and passwords secret.
+UR: معلومات اور پاس ورڈز کو راز رکھنا۔
+---
+SQUARE: 29
+EN: Sharing personal information with online strangers.
+UR: آن لائن اجنبیوں کے ساتھ ذاتی معلومات شیئر کرنا۔
+---
+SQUARE: 30
+EN: I am a Digital Safety Champion!
+UR: میں ایک ڈیجیٹل سیفٹی چیمپئن ہوں۔
+---

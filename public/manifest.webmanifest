@@ -1,0 +1,16 @@
+{
+  "name": "SOFT Snakes and Ladders",
+  "short_name": "SOFT Snakes",
+  "description": "Learn safe online habits through play. Works offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#5B1E96",
+  "theme_color": "#5B1E96",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

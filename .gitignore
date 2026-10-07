@@ -1,0 +1,15 @@
+node_modules/
+dist/
+release/
+test-results/
+playwright-report/
+screenshots/
+assets/generated/
+SOFT_Snakes_and_Ladders_Handover/
+SOFT_Snakes_and_Ladders_Handover.zip
+*.log
+.DS_Store
+# Signing secrets: never commit
+*.jks
+*.keystore
+keystore.properties
