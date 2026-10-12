@@ -32,8 +32,14 @@ async function boot() {
   (window as unknown as { __soft: App }).__soft = app; // handy in the browser console for support
 }
 
-boot().catch((e) => {
-  console.error(e);
-  const root = document.getElementById('app');
-  if (root) root.textContent = 'Sorry, the game could not start. Please close it and open it again.';
-});
+function start() {
+  boot().catch((e) => {
+    console.error(e);
+    // Keep the loading screen and show its help right away, so the player is never left on a blank purple screen.
+    document.querySelector('#splash .splash-help')?.classList.add('now');
+  });
+}
+
+// The one file version runs as a plain script in <head>, so wait until the page body exists.
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+else start();

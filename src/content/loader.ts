@@ -44,7 +44,8 @@ export async function loadText(name: string, bundled: string, deps: LoaderDeps =
     // On desktop the bundled copy is authoritative; file:// fetches are not used.
     return { text: bundled, source: 'bundled' };
   }
-  if (deps.fetcher) {
+  // The one file version has everything built in and is not allowed to make network requests.
+  if (deps.fetcher && !(typeof __SINGLE_FILE__ !== 'undefined' && __SINGLE_FILE__)) {
     try {
       const t = await deps.fetcher(`content/${name}`);
       if (typeof t === 'string' && t.trim()) return { text: t, source: 'web' };

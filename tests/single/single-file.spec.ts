@@ -130,3 +130,50 @@ test('a full game at normal speed (no test shortcuts)', async ({ page }, info) =
   expect(outside).toEqual([]);
   expect(errors).toEqual([]);
 });
+
+test('a viewer that cannot run the game shows help instead of a blank purple screen', async ({ browser }, info) => {
+  test.skip(info.project.name !== 'phone-portrait');
+  const ctx = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+  const page = await ctx.newPage();
+  await page.goto(FILE);
+  // The help fades in after a few seconds using CSS alone, so it appears even when no code can run.
+  const help = page.locator('#splash .splash-help');
+  await expect.poll(() => help.evaluate((el) => getComputedStyle(el).opacity), { timeout: 10_000 }).toBe('1');
+  await expect(help).toContainText('Open with Chrome');
+  await page.screenshot({ path: 'screenshots/single_no_javascript_help.png' });
+  await ctx.close();
+});
+
+test('hosted on a web server as index.html (the iPhone link version)', async ({ page }, info) => {
+  test.skip(info.project.name !== 'phone-portrait');
+  const { createServer } = await import('node:http');
+  const { readFileSync } = await import('node:fs');
+  const html = readFileSync('snake-and-ladder.html');
+  const requests: string[] = [];
+  const server = createServer((req, res) => {
+    requests.push(req.url ?? '');
+    if (req.url === '/' || req.url?.startsWith('/?') || req.url === '/index.html') {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(html);
+    } else {
+      res.writeHead(404);
+      res.end();
+    }
+  });
+  await new Promise<void>((r) => server.listen(4180, r));
+  try {
+    const errors: string[] = [];
+    page.on('pageerror', (e) => errors.push(e.message));
+    await page.goto('http://localhost:4180/?fast=1');
+    await expect(page.getByTestId('play')).toBeVisible();
+    await page.getByTestId('play').tap();
+    await page.getByTestId('start').tap();
+    const { rolls } = await playToTheEnd(page);
+    expect(rolls).toBeGreaterThan(0);
+    expect(errors).toEqual([]);
+    // The page asks the server for nothing except itself.
+    expect(requests.filter((u) => !(u === '/' || u.startsWith('/?')))).toEqual([]);
+  } finally {
+    server.close();
+  }
+});

@@ -41,8 +41,8 @@ button { font: inherit; color: inherit; }
 input { font: inherit; user-select: text; -webkit-user-select: text; }
 
 /* ---------- splash ---------- */
-#splash { position: fixed; inset: 0; display: grid; place-items: center; background: var(--purple-mid); z-index: 50; }
-.splash-logo { font: 800 64px var(--font-en); color: #fff; letter-spacing: 4px; animation: pulse 1.2s ease-in-out infinite; }
+/* (base styles live in index.html so they work even if the game cannot start) */
+.splash-logo { animation: pulse 1.2s ease-in-out infinite; }
 
 /* ---------- bilingual text ---------- */
 .t-ur, [lang='ur'] { font-family: var(--font-ur); line-height: 2.1; }

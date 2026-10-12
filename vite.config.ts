@@ -115,6 +115,7 @@ function singleFileHtml(): Plugin {
       const png = await sharp('public/icons/icon-192.png').resize(64, 64).png({ compressionLevel: 9, palette: true }).toBuffer();
       const icon = `data:image/png;base64,${png.toString('base64')}`;
       return html
+        .replace(/<script type="module" crossorigin>/g, '<script>')
         .replace(/<link rel="manifest"[^>]*>\s*/g, '')
         .replace(/<link rel="(icon|apple-touch-icon)"[^>]*>/g, `<link rel="$1" type="image/png" href="${icon}" />`)
         .replace(
@@ -131,7 +132,7 @@ export default defineConfig(({ mode }) => {
     base: './',
     define: { __APP_VERSION__: JSON.stringify(pkg.version), __SINGLE_FILE__: JSON.stringify(single) },
     plugins: single
-      ? [boardImages(true), viteSingleFile({ removeViteModuleLoader: true }), singleFileHtml()]
+      ? [boardImages(true), viteSingleFile({ removeViteModuleLoader: false }), singleFileHtml()]
       : [boardImages(false), contentFolder(), classicScript(), serviceWorker()],
     // The single file build must not copy public/ (board JPGs, icons, manifest): everything it needs is inlined.
     publicDir: single ? false : 'public',
@@ -141,7 +142,8 @@ export default defineConfig(({ mode }) => {
       assetsInlineLimit: single ? 100_000_000 : 0,
       cssCodeSplit: !single,
       chunkSizeWarningLimit: 4000,
-      rollupOptions: { output: { format: single ? 'es' : 'iife', inlineDynamicImports: true } },
+      // Classic (non module) script everywhere: runs in more browsers and in-app viewers than a module script.
+      rollupOptions: { output: { format: 'iife', inlineDynamicImports: true } },
     },
     server: { port: 5173 },
   };

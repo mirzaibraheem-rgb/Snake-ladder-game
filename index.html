@@ -10,9 +10,27 @@
     <link rel="icon" type="image/png" href="icons/icon-192.png" />
     <link rel="apple-touch-icon" href="icons/icon-192.png" />
     <title>SOFT Snakes and Ladders</title>
+    <style>
+      /* Loading screen. Kept here (not in the game's CSS) so it works even where the game cannot start. */
+      #splash { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; padding: 24px; background: #5b1e96; color: #fff; font-family: 'Baloo 2', 'Segoe UI', system-ui, sans-serif; text-align: center; }
+      .splash-logo { font-weight: 800; font-size: 64px; letter-spacing: 4px; }
+      .splash-help { max-width: 460px; background: #fff; color: #24123a; border-radius: 20px; padding: 16px 20px; font-size: 17px; line-height: 1.45; opacity: 0; animation: splash-help-in 0.4s ease-out 6s forwards; }
+      .splash-help strong { color: #5b1e96; display: block; font-size: 19px; margin-bottom: 4px; }
+      .splash-help p { margin: 6px 0; }
+      .splash-help .ur { direction: rtl; font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif; line-height: 2.1; font-size: 16px; }
+      .splash-help.now { opacity: 1; animation: none; }
+      @keyframes splash-help-in { to { opacity: 1; } }
+    </style>
   </head>
   <body>
-    <div id="splash" aria-hidden="true"><div class="splash-logo">SOFT</div></div>
+    <div id="splash">
+      <div class="splash-logo" aria-hidden="true">SOFT</div>
+      <div class="splash-help" role="note">
+        <strong>Still on this screen?</strong>
+        <p>Your phone opened the file in a simple viewer that cannot run games. Open it in a web browser instead: tap the menu (⋮) or Share, then choose <b>Open with Chrome</b>. On a computer, open it in Chrome or Edge. On iPhone, use the game's web link.</p>
+        <p class="ur" lang="ur">کیا یہی اسکرین رکی ہوئی ہے؟ فون نے فائل ایک سادہ ویور میں کھولی ہے جو گیم نہیں چلا سکتا۔ اسے براؤزر میں کھولیں: مینو (⋮) یا شیئر دبائیں اور <b>Chrome میں کھولیں</b> چنیں۔ آئی فون پر گیم کا ویب لنک استعمال کریں۔</p>
+      </div>
+    </div>
     <main id="app"></main>
     <script type="module" src="/src/main.ts"></script>
   </body>
