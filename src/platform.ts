@@ -27,7 +27,7 @@ export function setupPlatform(app: App) {
 
   // Register the offline service worker for the web version only.
   const isWeb = !isNative() && !window.softDesktop && (location.protocol === 'https:' || location.hostname === 'localhost');
-  if (isWeb && 'serviceWorker' in navigator && import.meta.env.PROD) {
+  if (isWeb && !__SINGLE_FILE__ && 'serviceWorker' in navigator && import.meta.env.PROD) {
     navigator.serviceWorker.register('sw.js').catch((e) => console.warn('[pwa] service worker not registered', e));
   }
 }

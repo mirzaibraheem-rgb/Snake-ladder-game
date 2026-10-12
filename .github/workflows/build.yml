@@ -21,8 +21,14 @@ jobs:
       - run: npm run build:web
       - run: npx playwright install --with-deps chromium
       - run: npx playwright test
+      - name: One file version, tested from file:// with the network off
+        run: |
+          npm run build:single
+          npx playwright test -c playwright.single.config.ts
       - uses: actions/upload-artifact@v4
         with: { name: web-version, path: dist }
+      - uses: actions/upload-artifact@v4
+        with: { name: snake-and-ladder-single-file, path: snake-and-ladder.html }
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: ui-screenshots, path: screenshots }
@@ -106,6 +112,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run build:web
+      - run: npm run build:single
       - name: Get the Windows .exe files built by the windows job
         uses: actions/download-artifact@v4
         with: { name: windows-exe, path: release }

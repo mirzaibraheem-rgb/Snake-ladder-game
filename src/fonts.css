@@ -1,0 +1,7 @@
+/* Bundled fonts (SIL Open Font License). WOFF2 only: every browser and WebView the game targets supports it,
+   and it keeps the single file version small. */
+@font-face { font-family: 'Baloo 2'; font-style: normal; font-display: swap; font-weight: 500; src: url('@fontsource/baloo-2/files/baloo-2-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Baloo 2'; font-style: normal; font-display: swap; font-weight: 700; src: url('@fontsource/baloo-2/files/baloo-2-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Baloo 2'; font-style: normal; font-display: swap; font-weight: 800; src: url('@fontsource/baloo-2/files/baloo-2-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Nastaliq Urdu'; font-style: normal; font-display: swap; font-weight: 400; src: url('@fontsource/noto-nastaliq-urdu/files/noto-nastaliq-urdu-arabic-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Nastaliq Urdu'; font-style: normal; font-display: swap; font-weight: 700; src: url('@fontsource/noto-nastaliq-urdu/files/noto-nastaliq-urdu-arabic-700-normal.woff2') format('woff2'); }

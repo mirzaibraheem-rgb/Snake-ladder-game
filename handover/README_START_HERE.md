@@ -35,9 +35,15 @@ Keep the **content** folder next to the .exe. That is where the messages live.
 
 **Tips:** press **F11** for full screen. Press **Space** to roll the die.
 
-## 2. Play in a web browser
+## 2. Play in a web browser (one file, easiest to share)
 
-Open the folder **05_Web_Version** and double click **index.html**. The game opens in your browser.
+Open the folder **05_Web_Version** and double click **snake-and-ladder.html**. The whole game is inside this one file (about 1 MB): no internet, no installation. You can email it, put it on a USB drive, or send it on WhatsApp, and it opens on computers, tablets and phones.
+
+For events and projectors, tap the **full screen** button (four corners icon, top right).
+
+The messages are built into this file. To change them, edit the text files and ask your developer to run `npm run build:single` to make a new file.
+
+The rest of the **05_Web_Version** folder (with **index.html**) is the same game as separate files.
 
 To share it online, give the whole **05_Web_Version** folder to whoever manages your website, and they can upload it to any web host. Once a player has opened it online, it also works offline on that device.
 

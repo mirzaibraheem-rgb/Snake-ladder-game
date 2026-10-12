@@ -4,6 +4,7 @@ A child friendly Snakes and Ladders game for **SOFT: Safe Online Future for Teen
 
 Runs on **Windows** (Electron), **Android** and **iOS** (Capacitor), and the **Web** (offline PWA) from one TypeScript codebase. No ads, no accounts, no data collection, fully offline.
 
+- **Quickest way to play:** open `snake-and-ladder.html` (the whole game in one 1 MB file; works offline, can be emailed)
 - NGO staff: start with `handover/README_START_HERE.md`
 - Developers: `DEVELOPER_GUIDE.md`
 - Edit messages without code: `content/` and `docs/HOW_TO_EDIT_MESSAGES.md`
@@ -14,5 +15,5 @@ Runs on **Windows** (Electron), **Android** and **iOS** (Capacitor), and the **W
 npm install
 npm run dev            # play locally
 npm test               # rules engine, parser, 1,000 game simulation
-npm run build:web      # build:win, build:android, build:ios also available
+npm run build:web      # build:single, build:win, build:android, build:ios also available
 ```

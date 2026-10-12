@@ -1,8 +1,4 @@
-import '@fontsource/baloo-2/latin-500.css';
-import '@fontsource/baloo-2/latin-700.css';
-import '@fontsource/baloo-2/latin-800.css';
-import '@fontsource/noto-nastaliq-urdu/arabic-400.css';
-import '@fontsource/noto-nastaliq-urdu/arabic-700.css';
+import './fonts.css';
 import './styles.css';
 import { loadContent } from './content';
 import { setStrings } from './content/strings';

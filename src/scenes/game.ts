@@ -16,6 +16,7 @@ import { clearSave, saveGame, type SavedGame } from '../storage/save';
 import { winScreen } from './win';
 import { titleScene } from './title';
 import { ROBOT } from './setup';
+import { fullscreenButton } from '../ui/fullscreen';
 
 /** Debug overlay: ?debug=1 on the web, or Ctrl+Shift+D anywhere. */
 let debugOn = (() => {
@@ -69,6 +70,7 @@ function gameScene(app: App, board: BoardDef, initial: GameState, rules: RulesCo
   const controls = h('div', { class: 'controls' }, die.el, status);
   const pauseBtn = button(h('span', { class: 'pause-icon', 'aria-hidden': 'true' }), () => openPause(), 'btn btn-icon pause-btn', { 'aria-label': plain('pause'), 'data-testid': 'pause' });
   const toastHost = h('div', { class: 'toast-host' });
+  const hudTools = h('div', { class: 'hud-tools' }, pauseBtn, fullscreenButton());
   el.append(hud, boardWrap, controls, toastHost);
   el.dataset.board = board.id;
 
@@ -113,7 +115,7 @@ function gameScene(app: App, board: BoardDef, initial: GameState, rules: RulesCo
           active ? h('div', { class: 'turn-arrow', 'aria-hidden': 'true' }) : null,
         );
       }),
-      pauseBtn,
+      hudTools,
     );
     view.setActive(state.current);
     const cur = state.players[state.current];

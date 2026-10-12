@@ -3,11 +3,13 @@ import settingsJson from './settings.json';
 import type { BoardDef, RulesConfig } from '../engine/types';
 import type { Lang } from '../content/strings';
 import { validateBoard } from '../engine/validate';
+import boardImages from 'virtual:board-images';
 
-export const BOARDS = (boardsJson.boards as unknown as BoardDef[]).filter((b) => {
+// In the single file build the board art is embedded as WebP data; otherwise the path in boards.json is used.
+export const BOARDS = (boardsJson.boards as unknown as BoardDef[]).map((b) => {
   const errs = validateBoard(b);
   if (errs.length) console.warn(`[boards] ${b.id} has problems:`, errs);
-  return true;
+  return { ...b, image: boardImages[b.image] ?? b.image };
 });
 
 export const DEFAULTS = settingsJson;

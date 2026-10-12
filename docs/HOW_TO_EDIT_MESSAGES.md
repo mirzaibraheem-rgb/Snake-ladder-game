@@ -88,6 +88,10 @@ Then **close the game and open it again.** That is all. No rebuild is needed.
 
 **Check it worked:** open the game, tap **About**. It says how many messages were loaded and where from ("external" means your edited file).
 
+### One file version (`snake-and-ladder.html`)
+
+This file has the messages built in, because a single file cannot read a separate text file. To update it, edit `content/snake_messages.txt` inside `07_Source_Code` and ask your developer to run `npm run build:single`. Share the new `snake-and-ladder.html`.
+
 ### Web version
 
 Upload the edited file to the `content` folder on your web server, replacing the old one. Players see the new messages the next time they open the game while online.

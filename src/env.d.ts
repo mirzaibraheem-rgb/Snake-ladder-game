@@ -4,3 +4,8 @@ declare module '*.txt?raw' {
   const content: string;
   export default content;
 }
+declare const __SINGLE_FILE__: boolean;
+declare module 'virtual:board-images' {
+  const images: Record<string, string>;
+  export default images;
+}

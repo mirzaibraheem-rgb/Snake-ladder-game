@@ -18,6 +18,7 @@ npm run test:ui      # Playwright UI tests at phone, tablet and desktop sizes (s
 | Command | Produces | Needs |
 |---|---|---|
 | `npm run build:web` | `dist/`: static site, works offline as a PWA and also opens from disk (`index.html`) | Node only |
+| `npm run build:single` | `snake-and-ladder.html`: the whole game in ONE file (about 1 MB) that opens by double click, offline. Board art is embedded as WebP, fonts as WOFF2, and the page blocks all network access. Tested with `npx playwright test -c playwright.single.config.ts` | Node only |
 | `npm run build:win` | `release/SOFT-Snakes-Ladders-Setup.exe` and `release/SOFT-Snakes-Ladders-Portable.exe` | Windows, or Linux/macOS with Wine |
 | `npm run build:android` | `android/app/build/outputs/bundle/release/app-release.aab` | Android Studio (SDK + JDK 21); signing in `android/keystore.properties` |
 | `npm run build:ios` | Updates the Xcode project in `ios/`; then archive in Xcode | macOS + Xcode |
@@ -61,6 +62,8 @@ tests/                   Vitest unit tests, simulation, Playwright UI tests, Ele
 **Content loading order:** desktop `content/` folder next to the .exe, then `content/` on the web server, then the copy bundled at build time. Bad or missing files never crash the game; problems are logged and shown in the calibration overlay.
 
 ## Change messages
+
+**One file version:** `snake-and-ladder.html` has the messages built in (a single file cannot read a separate text file). After editing `content/`, run `npm run build:single` and share the new file.
 
 Edit the files in `content/`. Format and rules: `docs/HOW_TO_EDIT_MESSAGES.md`. `npm test` checks the shipped file still has 60 complete messages; update that test if the NGO changes the count on purpose.
 

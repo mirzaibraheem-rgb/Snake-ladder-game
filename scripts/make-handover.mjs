@@ -41,8 +41,9 @@ dir('04_Messages');
 for (const f of ['snake_messages.txt', 'ladder_messages.txt', 'tile_texts.txt', 'ui_strings.json']) copy(`content/${f}`, `04_Messages/${f}`);
 copy('docs/HOW_TO_EDIT_MESSAGES.md', '04_Messages/HOW_TO_EDIT_MESSAGES.md');
 
-// 05 Web
+// 05 Web (folder version for web hosting, plus the one file version for email and USB)
 copy('dist', '05_Web_Version');
+copy('snake-and-ladder.html', '05_Web_Version/snake-and-ladder.html');
 
 // 06 Store
 dir('06_Store_Publishing');

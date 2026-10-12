@@ -7,6 +7,7 @@ import { setupScene } from './setup';
 import { resumeGame } from './game';
 import { CHARACTERS, characterSVG } from '../characters/characters';
 import { BOARDS } from '../config';
+import { fullscreenButton } from '../ui/fullscreen';
 
 export function titleScene(app: App): Screen {
   const el = h('div', { class: 'screen title-screen' });
@@ -17,6 +18,7 @@ export function titleScene(app: App): Screen {
     );
     el.replaceChildren(
       h('div', { class: 'title-bg', style: `background-image:url(${BOARDS[0].image})` }),
+      h('div', { class: 'corner-tools' }, fullscreenButton()),
       h('div', { class: 'title-card' },
         h('div', { class: 'logo' },
           h('div', { class: 'logo-soft', 'aria-hidden': 'true' }, 'SOFT'),
